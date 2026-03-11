@@ -54,9 +54,17 @@ Vous avez vu dans cette séquence comment créer des secrets GiHUB afin de mettr
 Vous pouvez observez les différentes couches OSI sur votre site **{site}.pythonanywhere.com/osi**  
   
 **Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**    
-* Un protocole,  
+* Un protocole,
+  
+  - En milieu numérique, la communication entre systèmes repose sur des conventions bien établies. Dès qu’un échange de données s’organise, des règles précises encadrent la forme des messages, la séquence des interactions et les réactions attendues à chaque étape. Ces règles, regroupées sous le terme de protocoles, rendent possible l’entente entre matériels ou logiciels parfois très différents. Il s’avère que sans elles, les connexions seraient aléatoires, voire inopérantes. Certes, des standards comme TCP ou HTTP illustrent parfaitement cette nécessité. Chacun gère un aspect particulier de la transmission, que ce soit le transport fiable ou l’accès aux pages web. L’interopérabilité des réseaux en dépend largement. Bref, tout fonctionne grâce à ces cadres invisibles.
+
 * Une entité protocolaire,
-* Un service,  
+  - Au sein d’un système de communication, chaque niveau du modèle OSI intègre un élément clé appelé entité protocolaire. Il s’agit d’un module, logiciel ou matériel, chargé d’appliquer concrètement les règles d’un protocole défini pour cette couche. Son rôle principal est d’assurer une interaction logique avec les homologues situés sur d’autres machines, tout en collaborant étroitement avec les niveaux voisins du même dispositif. Ces échanges permettent le transit structuré des informations. Chaque couche fonctionne ainsi de manière autonome grâce à ses entités dédiées, qui gèrent les opérations spécifiques au traitement des données. D’un autre côté, on parle de service pour désigner l’ensemble des prestations offertes par une couche à celle qui se trouve juste au-dessus. Ce service représente une interface fonctionnelle, indépendante des processus internes. Il expose les capacités disponibles sans révéler les détails techniques de mise en œuvre. Cette abstraction simplifie l’usage des couches inférieures. Par exemple, au niveau transport, on bénéficie d’un transfert de données entre applications, dont la fiabilité dépend du protocole choisi.
+
+* Un service,
+  
+  - Un service peut désigner l’ensemble des prestations offertes par une couche à celle qui se trouve juste au-dessus. Ce service représente une interface fonctionnelle, indépendante des processus internes. Il expose les capacités disponibles sans révéler les détails techniques de mise en œuvre. Cette abstraction simplifie l’usage des couches inférieures. Par exemple, au niveau transport, on bénéficie d’un transfert de données entre applications, dont la fiabilité dépend du protocole choisi.  
+
 * Une primitive de service,  
 * Une Service Data Unit (SDU) par rapport à une PDU  
 * Un point d'accès à un service SAP (Service Access Point)  
