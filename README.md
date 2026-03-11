@@ -65,9 +65,18 @@ Vous pouvez observez les différentes couches OSI sur votre site **{site}.python
   
   - Un service peut désigner l’ensemble des prestations offertes par une couche à celle qui se trouve juste au-dessus. Ce service représente une interface fonctionnelle, indépendante des processus internes. Il expose les capacités disponibles sans révéler les détails techniques de mise en œuvre. Cette abstraction simplifie l’usage des couches inférieures.
 
-* Une primitive de service,  
-* Une Service Data Unit (SDU) par rapport à une PDU  
-* Un point d'accès à un service SAP (Service Access Point)  
+* Une primitive de service,
+  
+  - Une primitive de service est une opération qui permet à une couche du modèle OSI d’utiliser les services offerts par une autre couche. Elle représente l’interface de communication entre deux couches adjacentes du modèle et définit les interactions nécessaires pour demander ou fournir un service. Les primitives permettent notamment de demander l’exécution d’une opération, de signaler un événement ou de confirmer qu’une action a été réalisée. Elles constituent donc le mécanisme de communication interne entre les différentes couches du modèle OSI.
+ 
+* Une Service Data Unit (SDU) par rapport à une PDU
+
+  - Une Service Data Unit (SDU) représente les données transmises par une couche supérieure à une couche inférieure dans le cadre de l’utilisation d’un service. Lorsque ces données sont traitées par la couche inférieure, celle-ci ajoute des informations de contrôle propres à son protocole, généralement sous forme d’en-têtes ou parfois de champs de fin. L’ensemble formé par ces informations de contrôle et les données constitue une Protocol Data Unit (PDU). La PDU correspond donc à l’unité de données échangée entre entités protocolaires d’une même couche, tandis que la SDU représente simplement les données reçues de la couche supérieure avant encapsulation.
+
+* Un point d'accès à un service SAP (Service Access Point)
+  
+  - Un Service Access Point, ou SAP, est un point d’interface logique par lequel une couche du modèle OSI fournit ses services à la couche immédiatement supérieure. Il permet à la couche supérieure d’accéder aux fonctionnalités offertes par la couche inférieure de manière structurée. Chaque SAP possède un identifiant qui permet de distinguer différents points d’accès au sein d’une même couche. Dans les réseaux informatiques, certains éléments comme les numéros de ports au niveau de la couche transport peuvent être considérés comme des exemples de points d’accès à un service.
+
 
 ---------------------------------------------------
 🗺️ Séquence 5 : Retour sur le protocole DHCP
